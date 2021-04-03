@@ -28,7 +28,7 @@ public class recipeOutput extends AppCompatActivity {
         Intent intent = getIntent();
         String msg = intent.getStringExtra(MainActivity.KEY);
 
-        String url = "http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet&p=3"+msg;
+        String url = "http://www.recipepuppy.com/api/?i="+msg;
 
         TextView textView = findViewById(R.id.result_output);
         //textView.setText(msg);
@@ -73,8 +73,8 @@ public class recipeOutput extends AppCompatActivity {
 
             @Override
             public void onErrorResponse(VolleyError error) {
-                Log.d("myapp", "Something went wrong");
-                textView.setText("Something went wrong");
+                Log.d("myapp", error.toString());
+                textView.setText(error.toString());
             }
 
 

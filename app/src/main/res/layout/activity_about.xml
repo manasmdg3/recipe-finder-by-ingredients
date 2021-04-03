@@ -58,7 +58,7 @@
         android:id="@+id/textView4"
         android:layout_width="368dp"
         android:layout_height="109dp"
-        android:text="    MANAS DUTTA GUPTA\n    COLLEGE: BRSNC\n    GitHub Link:   \n    Mail id: "
+        android:text="    MANAS DATTAGUPTA\n    COLLEGE: BRSNC\n    GitHub Link:   \n    Mail id: "
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
